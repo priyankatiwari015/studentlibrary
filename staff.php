@@ -1,24 +1,24 @@
 <?php
 include("setting.php");
 session_start();
-if(isset($_SESSION['sid']))
+if(isset($_SESSION['stid']))
 {
 	header("location:home.php");
 }
-$sid=mysqli_real_escape_string($set,$_POST['sid']);
+$sid=mysqli_real_escape_string($set,$_POST['stid']);
 $pass=mysqli_real_escape_string($set,$_POST['pass']);
 
-if($sid==NULL || $_POST['pass']==NULL)
+if($stid==NULL || $_POST['pass']==NULL)
 {
 	//
 }
 else
 {
 	$p=sha1($pass);
-	$sql=mysqli_query($set,"SELECT * FROM students WHERE sid='$sid' AND password='$p'");
+	$sql=mysqli_query($set,"SELECT * FROM students WHERE sid='$stid' AND password='$pass'");
 	if(mysqli_num_rows($sql)==1)
 	{
-		$_SESSION['sid']=$_POST['sid'];
+		$_SESSION['stid']=$_POST['stid'];
 		header("location:home.php");
 	}
 	else
@@ -37,7 +37,7 @@ else
 
 <body>
 <div id="banner">
-<span class="head">Student Library </span><br />
+<span class="head">e-Library </span><br />
 </div>
 <br />
 
@@ -46,22 +46,20 @@ else
 <br />
 <br />
 
-<span class="SubHead">Student Sign In</span>
+<span class="SubHead">Staff Sign In</span>
 <br />
 <br />
 <form method="post" action="">
 <table border="0" cellpadding="4" cellspacing="4" class="table">
 <tr><td colspan="2" align="center" class="msg"><?php echo $msg;?></td></tr>
-<tr><td class="labels">Student ID : </td><td><input type="text" name="sid" class="fields" size="25" placeholder="Enter Student ID" required="required" /></td></tr>
+<tr><td class="labels">Staff ID : </td><td><input type="text" name="sid" class="fields" size="25" placeholder="Enter Student ID" required="required" /></td></tr>
 <tr><td class="labels">Password : </td><td><input type="password" name="pass" class="fields" size="25" placeholder="Enter Password" required="required" /></td></tr>
 <tr><td colspan="2" align="center"><input type="submit" value="Sign In" class="fields" /></td></tr>
 </table>
 </form>
 <br />
 <br />
-<a href="/" class="link">Don't Have an account?</a></br>
-<a href="register.php" class="link">Sign Up</a>
-<br />
+<a href="index.html" class="link">Home page</a></br>
 
 <br />
 <br />

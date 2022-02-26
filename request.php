@@ -28,14 +28,14 @@ if($bn!=NULL && $ba!=NULL)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Library </title>
+<title>e-Library </title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="banner">
-<span class="head">Student Library </span><br />
-<marquee class="clg" direction="right" behavior="alternate" scrollamount="1">TECH VEGAN</marquee>
+<span class="head">e-Library </span><br />
+
 </div>
 <br />
 

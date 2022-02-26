@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style >
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+      body {
+  font-family: "Montserrat";
+}
+section {
+  
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 100%;
+  margin-top: 2px;
+  font-size: 20px;
+}.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 2px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 1px;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+  </style>
+
+
+    <title>Contact Us:</title>
+
+
+  </head>
+  <body>
+    <section>
+  <div class="container">
+    <form  align="center"action="javascript:sendmail()" method="POST" id="my-form">
+      <div class="form-group">
+        <h3 class = 'alert alert-success'>Send Us Your Valuable Feedback !</h3>
+    </div><div class="form-group">
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="roll">Roll No.</label>
+        <input type="roll" id="roll" name="roll">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="massage">Message</label>
+        <textarea name="massage" id="massage" cols="30" rows="3"></textarea>
+      </div>
+
+      <button type="submit" onclick="sendmail();" value="SendMessage">Submit</button>
+    </form>
+  </div>
+  <div id="status"></div>
+</section>
+        </center>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script >
+    function sendmail(){
+    
+      var name = $('#name').val();
+      var roll= $('#roll').val();
+      var email = $('#email').val();
+     var message = $('#message').val();
+     var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+      //console.log(name, phone, email, message);
+
+      Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        To: 'priyankatiwari015@gmail.com',
+        From: "priyankt0929@gmail.com",
+        Subject: "New message on contact from "+name,
+        Body: Body
+      }).then(
+        message =>{
+          //console.log (message);
+          if(message=='OK'){
+          alert('Your mail has been send. Thank you for connecting.');
+          }
+          else{
+            console.error (message);
+            alert('There is error at sending message. ')
+            
+          }
+
+        }
+      );
+  }
+</script>
+    
+  </body>
+</html>

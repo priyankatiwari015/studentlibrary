@@ -40,14 +40,14 @@ elseif($p1!=$p2)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Library Management System</title>
+<title>e-Library</title>
 <link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="banner">
-<span class="head">Library Management System</span><br />
-<marquee class="clg" direction="right" behavior="alternate" scrollamount="1">TECH VEGAN</marquee>
+<span class="head">e-Library</span><br />
+
 </div>
 <br />
 
@@ -77,4 +77,4 @@ elseif($p1!=$p2)
 </div>
 </div>
 </body>
-</html><!--  Designed & Developed by Ashish Vegan | technologyvegan@gmail.com | www.ashishvegan.com | This Source Code is NOT FOR SALE-->
+</html>

@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
+<!--CSS-->
 
 <style type="text/css">
     .bs-example{
@@ -29,19 +29,6 @@
 .jumbotron{
   margin-bottom: 0px;
 }
-
-</style>
-</head>
-<body>
-
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-<meta charset="utf-8">
-
-
-<style type="text/css">
     .bs-example{
         margin: 0px;
 
@@ -54,9 +41,8 @@
 
 
 </style>
-</head>
-<body>
 
+<!--nav bar-->
 
 
 <div class="bs-example">
@@ -70,8 +56,8 @@
             <div class="navbar-nav">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="admin.php" class="nav-item nav-link">Admin</a>
-                <a href="index.php" class="nav-item nav-link">Student</a>
-                <a href="staffclick.html" class="nav-item nav-link">Staff</a>
+                <a href="student.php" class="nav-item nav-link">Student</a>
+                <a href="staff.php" class="nav-item nav-link">Staff</a>
 
             </div>
 
@@ -86,6 +72,7 @@
         </div>
     </nav>
 </div>
+<!--Carousel-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -94,13 +81,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 " height="500px" src="lib1.png" alt="First slide">
+      <img class="d-block w-100 " height="500px" src="images/lib1.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " height="500px" src="lib2.jpg"alt="Second slide">
+      <img class="d-block w-100 " height="500px" src="images/lib2.jpg"alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " height="500px" src="images/lib3.webp" alt="Third slide">
+      <img class="d-block w-100 " height="500px" src="images/lib3.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -121,23 +108,19 @@
   <div class="row">
 
     <div class="col-lg-6">
-      <img src="Admin-icon.png"  width="50%" height="50%" alt=""><br><br>
+      <img src="images/Admin-icon.png"  width="50%" height="50%" alt=""><br><br>
         <a class="btn btn-primary btn-lg" style="text-align:center" href="admin.php" role="button">Admin</a>
 
     </div>
 
     <div class="col-lg-6">
-      <img src="student.png"  width="50%" height="50%" alt=""><br><br>
-      <a class="btn btn-primary btn-lg" href="index.php" role="button">Student</a>
+      <img src="images/student.png"  width="50%" height="50%" alt=""><br><br>
+      <a class="btn btn-primary btn-lg" href="student.php" role="button">Student</a>
     </div>
   </div>
 <hr class="my-4">
 
 </div>
-
-<!DOCTYPE html>
-<html>
-<head>
 
 
 
@@ -201,8 +184,8 @@ p{text-align:center;
     <div class="row">
                <div class="col-md-12 col-sm-12">
                     <div style="color:#ffffff;"class="wow fadeInUp footer-copyright">
-                         <p>Made in India <br>
-                         Copyright &copy;   2020  LazyCoder </p>
+                         <p>Made by Team ABC<br>
+                         Copyright &copy;   </p>
                     </div>
                </div>
     </div>

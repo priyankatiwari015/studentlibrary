@@ -33,7 +33,7 @@ else
 
 <body>
 <div id="banner">
-<span class="head">Student Library </span><br />
+<span class="head">e-Library </span><br />
 </div>
 <br />
 
@@ -82,7 +82,7 @@ else
 </table>
 </form><br />
 <br />
-<a href="index.php" class="link">Go Back</a>
+<a href="student.php" class="link">Go Back</a>
 <br />
 <br />
 
