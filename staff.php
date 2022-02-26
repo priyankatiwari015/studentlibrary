@@ -5,8 +5,8 @@ if(isset($_SESSION['stid']))
 {
 	header("location:home.php");
 }
-$sid=mysqli_real_escape_string($set,$_POST['stid']);
-$pass=mysqli_real_escape_string($set,$_POST['pass']);
+$stid=mysqli_real_escape_string($set,$_POST['stid']);
+$pass=mysqli_real_escape_string($set,$_POST['password']);
 
 if($stid==NULL || $_POST['pass']==NULL)
 {
@@ -15,7 +15,7 @@ if($stid==NULL || $_POST['pass']==NULL)
 else
 {
 	$p=sha1($pass);
-	$sql=mysqli_query($set,"SELECT * FROM students WHERE sid='$stid' AND password='$pass'");
+	$sql=mysqli_query($set,"SELECT * FROM students WHERE stid='$stid' AND password='$p'");
 	if(mysqli_num_rows($sql)==1)
 	{
 		$_SESSION['stid']=$_POST['stid'];
