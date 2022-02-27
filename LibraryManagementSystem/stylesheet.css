@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+.col-lg-6{
+  padding-left: 20%;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}
+.bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+footer {
+    padding: 0px 0px 0px 0px;
+    background-color:black;
+    margin:0px;
+}
+.fa {
+  padding: 20px;
+  font-size: 23px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+margin-top: 30px;
+}
+.fa-whatsapp {
+  background: #25d366;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+p{text-align:center;
+
+}
+body
+{
+	background-image:url(images/a.jpg);
+	margin:0px;
+	height: 100%;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head
+{
+	font-family:"Trebuchet MS";
+	font-size:40px;
+	color:#FFF;
+	margin-left:50px;
+}
+#banner
+{
+	width:99.5%;
+	height:100px;
+	border:2px solid #FFF;
+	background-color:#rgba(4, 29, 52, 0.7);
+}
+.clg
+{
+	font-family:"Segoe UI";
+	font-size:16px;
+	color:#FF0;
+}
+#wrapper
+{
+	width:80%;
+	border-radius:10px;
+	border:2px solid #FFF;
+	background-color:rgba(4, 29, 52, 0.7);
+}
+.SubHead
+{
+	font-family:"Segoe UI";
+	color:#FFF;
+	font-size:20px;
+}
+.labels
+{
+	font-family:"Trebuchet MS";
+	font-size:16px;
+	color:#FF3;
+}
+.fields
+{
+	font-family:"Trebuchet MS";
+	font-size:14px;
+	color:#FF3;
+	border-radius:5px;
+	padding:4px 6px;
+	border:1px solid #FF3;
+	background-color:transparent;
+}
+
+.table
+{
+	border-radius:5px;
+	padding:0px 5px;
+	border:1px solid #FF3;
+	background-color:transparent;
+}
+a.link:link{font-family:"Segoe UI";font-size:16px;color:#FFF;text-decoration:none;}
+a.link:active{font-family:"Segoe UI";font-size:16px;color:#FFF;text-decoration:none;}
+a.link:visited{font-family:"Segoe UI";font-size:16px;color:#FFF;text-decoration:none;}
+a.link:hover{font-family:"Segoe UI";font-size:16px;color:#F6F;text-decoration:none;}
+.msg
+{
+	font-family:"Segoe UI";
+	color:#6F6;
+	font-size:13px;
+}
+a.Command:link{text-decoration:none;font-family:"Segoe UI";color:#CFC;font-size:16px;padding:5px 7px;border:2px solid #FF0;border-radius:5px;}
+a.Command:active{text-decoration:none;font-family:"Segoe UI";color:#CFC;font-size:16px;padding:5px 7px;border:2px solid #FF0;border-radius:5px;}
+a.Command:visited{text-decoration:none;font-family:"Segoe UI";color:#CFC;font-size:16px;padding:5px 7px;border:2px solid #FF0;border-radius:5px;}
+a.Command:hover{text-decoration:none;font-family:"Segoe UI";color:#CFC;font-size:16px;padding:5px 7px;border:2px solid #F60;border-radius:5px;box-shadow:0px 0px 10px #FFFFFF;}
