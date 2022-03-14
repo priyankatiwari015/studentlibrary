@@ -5,8 +5,8 @@ if(isset($_SESSION['stid']))
 {
 	header("location:home.php");
 }
-$stid=mysqli_real_escape_string($set,$_POST['stid']);
-$pass=mysqli_real_escape_string($set,$_POST['password']);
+$sid=mysqli_real_escape_string($set,$_POST['stid']);
+$pass=mysqli_real_escape_string($set,$_POST['pass']);
 
 if($stid==NULL || $_POST['pass']==NULL)
 {
@@ -15,7 +15,7 @@ if($stid==NULL || $_POST['pass']==NULL)
 else
 {
 	$p=sha1($pass);
-	$sql=mysqli_query($set,"SELECT * FROM students WHERE stid='$stid' AND password='$p'");
+	$sql=mysqli_query($set,"SELECT * FROM students WHERE sid='$stid' AND password='$pass'");
 	if(mysqli_num_rows($sql)==1)
 	{
 		$_SESSION['stid']=$_POST['stid'];
@@ -54,12 +54,13 @@ else
 <tr><td colspan="2" align="center" class="msg"><?php echo $msg;?></td></tr>
 <tr><td class="labels">Staff ID : </td><td><input type="text" name="sid" class="fields" size="25" placeholder="Enter Student ID" required="required" /></td></tr>
 <tr><td class="labels">Password : </td><td><input type="password" name="pass" class="fields" size="25" placeholder="Enter Password" required="required" /></td></tr>
-<tr><td colspan="2" align="center"><input type="submit" value="Sign In" class="fields" /></td></tr>
+<tr><td colspan="2" align="center"><input  type="submit" value="Sign In" class="fields" /></td></tr>
 </table>
 </form>
 <br />
 <br />
 <a href="index.html" class="link">Home page</a></br>
+<a href="staffpage.html">Staff page</a>
 
 <br />
 <br />

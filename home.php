@@ -33,7 +33,7 @@ $name=$b['name'];
 <br />
 <br />
 <table border="0" class="table" cellpadding="10" cellspacing="10">
-<tr><td><a href="studentpage.html" class="Command">Go to my page</a></td></tr>
+<tr><td><a href="student_page.html" class="Command">Go to my page</a></td></tr>
 <tr><td><a href="changePassword.php" class="Command">Change Password</a></td></tr><tr><td><a href="logout.php" class="Command">Logout</a></td></tr>
 </table>
 <br />

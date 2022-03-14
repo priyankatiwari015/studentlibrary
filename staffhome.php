@@ -6,7 +6,7 @@ if(!isset($_SESSION['stid']))
 	header("location:index.php");
 }
 $aid=$_SESSION['aid'];
-$a=mysqli_query($set,"SELECT * FROM admin WHERE aid='$stid'");
+$a=mysqli_query($set,"SELECT * FROM admin WHERE stid='$stid'");
 $b=mysqli_fetch_array($a);
 $name=$b['name'];
 ?>
